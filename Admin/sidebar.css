@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.purple{
+    color: rgb(163, 168, 244);
+}
+
+.admin_pages{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+.sidebar_container{
+    background-color: rgb(101, 109, 214);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.sidebar_item {
+    margin: 10px 0;
+}
+.sidebar_item a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.sidebar_item a span {
+    display: none; /* Hide the text initially */
+}
+
+.sidebar_container:hover a span {
+    display: inline; /* Display the text on hover */
+}
+
+
+.sidebar_item a:hover{
+    background-color: rgb(163, 168, 244);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar_item.active{
+    background-color: rgb(163, 168, 244);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar_item a i{
+    padding: 0 20px;
+}
+
+.logout{
+    position: absolute;
+    bottom: 5%;
+}

@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.admin_pages{
+    display: flex;
+    height: 100vh;
+    gap: 30px;
+}
+
+.purple{
+    color: rgb(163, 168, 244);
+}
+
+.sidebar_container{
+    background-color: rgb(101, 109, 214);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.sidebar_item {
+    margin: 10px 0;
+}
+.sidebar_item a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.sidebar_item a span {
+    display: none; /* Hide the text initially */
+}
+
+.sidebar_container:hover a span {
+    display: inline; /* Display the text on hover */
+}
+
+
+.sidebar_item a:hover{
+    background-color: rgb(163, 168, 244);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar_item.active{
+    background-color: rgb(163, 168, 244);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sidebar_item a i{
+    padding: 0 20px;
+}
+
+
+.btn_edit{
+    border: 1px solid green;
+}
+
+.logout{
+    position: absolute;
+    bottom: 5%;
+}
+
+
+.content_area{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.header{
+    background-color: white;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 2px 2px gray;
+    padding: 10px 30px;
+    margin-right: 40px;
+    border-radius: 8px;
+    margin: 20px 20px;
+}
+
+.user_icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 1px solid gray;
+}
+
+.dashboard_section{
+    width: 95%;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+    padding: 20px 30px;
+    margin-right: 40px;
+    border-radius: 8px;
+    margin: 40px 20px;
+}
+
+.dashboard_section .card{
+    height: 200px;
+    border-radius: 8px;
+}
+
+.dashboard_section .card h3{
+    font-weight: 800;
+}
+
+.dashboard_section .card .fas{
+    font-size: 50px;
+}
+
+.transaction_section{
+    width: 95%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+    padding: 20px 30px;
+    margin-right: 40px;
+    border-radius: 8px;
+    margin: 40px 20px;
+    overflow: auto;
+    max-height: 75vh;
+}
+
+table, thead, tbody, tfoot{
+    width: 100%;
+}
+
+table thead tr{
+    background-color: rgb(163, 168, 244);
+}
+
+
+table tbody tr td{
+    padding: 18px 20px;
+}
+
+
+table tfoot tr{
+    width: 100%;
+    background-color: rgb(163, 168, 244);
+}
+
+table tr th{
+    padding: 20px 20px;
+}
+
+.print_btn{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.print_btn:hover{
+    background-color: rgb(163, 168, 244);
+    color: white;
+    text-decoration: none;
+    border: none;
+}
+
+form input[type='text'], form select, form input[type='password']{
+    height: 80px;
+    font-size: 22px;
+    display: block;
+    box-shadow: 0px 2px 2px 2px rgb(163, 168, 244);
+    border: none;
+}
+
+
+form label{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.settings_section{
+    width: 95%;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 2px 2px gray;
+    padding: 20px 30px;
+    margin-right: 40px;
+    border-radius: 8px;
+    margin: 40px 20px;
+    overflow: auto;
+}
